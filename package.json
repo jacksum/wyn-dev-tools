@@ -3,9 +3,9 @@
 	"displayName": "Wyn Dashboard Development Tools",
 	"description": "1.Add an action.2.Delete all branchs but current branch.3.Delete",
 	"version": "0.0.30",
-	"publisher": "boolxiao",
-	"repository": "https://github.com/woaiiimipi/wyn-dev-tools",
-	"homepage": "https://github.com/woaiiimipi/wyn-dev-tools",
+	"publisher": "jackwu",
+	"repository": "https://github.com/jacksum/wyn-dev-tools",
+	"homepage": "https://github.com/jacksum/wyn-dev-tools",
 	"icon": "wyn.png",
 	"engines": {
 		"vscode": "^1.43.0"

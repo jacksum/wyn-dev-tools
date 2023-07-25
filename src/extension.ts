@@ -262,10 +262,8 @@ export function activate(context: vscode.ExtensionContext) {
 		const zhText = (isEndLine ? space(2): '') + text + '\n' + space(nextLineHeadSpaceCount);
 		const fileName = editor.document.fileName;
 		const zhPath = fileName.includes('en.json') ? fileName.replace('en.json', 'zh.json'): fileName.replace('en-US.json', 'zh-CN.json');
-		const esPath = fileName.includes('en.json') ? fileName.replace('en.json', 'es.json'): fileName.replace('en-US.json', 'es.json');
 		const plPath = fileName.includes('en.json') ? fileName.replace('en.json', 'pl.json'): fileName.replace('en-US.json', 'pl.json');
 		const twPath = editor.document.fileName.replace('en.json', 'zh_TW.json');
-		await openFileAndInsertText(esPath, '', zhText, startPosition);
 		await openFileAndInsertText(plPath, '', zhText, startPosition);
 		await openFileAndInsertText(zhPath, '', zhText, startPosition);
 		gotoRange(new Range(selection.start, selection.end), selection);
